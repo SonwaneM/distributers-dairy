@@ -1,0 +1,28 @@
+<div class="container">
+    <mat-card class="example-card">
+
+        <mat-card-title class="title">Login</mat-card-title>
+
+
+        <form [formGroup]="this.loginForm" class="form-group form-container">
+            <div class="example-form">
+                <mat-form-field class="username" appearance="outline">
+                    <mat-label>Username</mat-label>
+                    <input matInput formControlName="username" required>
+                </mat-form-field>
+            </div>
+            <div class="example-form">
+                <mat-form-field class="password " appearance="outline">
+                    <mat-label>Password</mat-label>
+                    <input matInput formControlName="password" type="password" required>
+                </mat-form-field>
+            </div>
+
+
+            <mat-card-actions>
+                <button mat-raised-button (click)="login()" color="primary">Login</button>
+            </mat-card-actions>
+            <a style="color:blueviolet; margin-top: 10px; font-size: small;" routerLink="/SignUp">New User? Click to SignUp!</a>
+        </form>
+    </mat-card>
+</div>

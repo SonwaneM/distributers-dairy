@@ -1,0 +1,47 @@
+        .sales-dialog-container {
+            width: 100%;
+            height: 100vh;
+            text-align: center;
+            background-color: steelblue;
+            box-shadow: inset;
+            font-family: -webkit-body;
+            // .sales-dialog-container {
+            //     display: block;
+            //     padding: 24 px;
+            //     border-radius: 4 px;
+            //     box-sizing: border-box;
+            //     overflow: auto;
+            //     outline: 0;
+            //     width: 100%;
+            //     height: 100%;
+            //     min-height: inherit;
+            //     max-height: inherit;
+            //     background-color: steelblue;
+            //     box-shadow: inset;
+            //     text-align: center;
+            //     font-family: -webkit-body;
+            // }
+        }
+        
+        .sales-card {
+            text-align: center;
+            height: 150px;
+            width: 200px;
+            border: solid 1px;
+            background-color: lightcyan;
+            margin-left: 35px;
+            top: 10px;
+        }
+        
+        .main-card {
+            top: 10px;
+            height: 300px;
+            width: 300px;
+            text-align: center;
+            // margin-right: 50px;
+            // margin-left: 50px;
+            background-color: lightblue;
+            mat-card-actions {
+                margin-top: 10px;
+            }
+        }

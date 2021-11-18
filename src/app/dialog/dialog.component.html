@@ -1,0 +1,50 @@
+<div class="container">
+
+    <mat-card-title class="name">Add Customer</mat-card-title>
+    <form class="form-fileds">
+        <mat-form-field class="user-full-width" appearance="fill">
+            <mat-label>
+                <mat-icon>perm_identity</mat-icon>Name</mat-label>
+            <input matInput placeholder="" type="name">
+        </mat-form-field>
+        <mat-form-field class="user-full-width" appearance="fill">
+            <mat-label>
+                <mat-icon> location_on</mat-icon>Address</mat-label>
+            <input matInput placeholder="" type="name">
+        </mat-form-field>
+        <mat-form-field class="user-full-width" appearance="fill">
+            <mat-label>
+                <mat-icon> location_on</mat-icon>Pincode</mat-label>
+            <input matInput placeholder="" type="pin_number">
+        </mat-form-field>
+        <mat-form-field class="user-full-width" appearance="fill">
+            <mat-label>
+                <mat-icon> email</mat-icon>Email</mat-label>
+            <input matInput placeholder="" type="text">
+        </mat-form-field>
+        <mat-form-field class="user-full-width" appearance="fill">
+            <mat-label>
+                <mat-icon> stay_primary_portrait</mat-icon>Mobile_No</mat-label>
+            <input matInput placeholder="" type="phone_number">
+        </mat-form-field>
+    </form>
+
+    <mat-card-title class="name">Set Requirments</mat-card-title>
+
+
+    <mat-card class="customer-card">
+        <mat-card-subtitle>Product Name: milk</mat-card-subtitle>
+        <mat-card-subtitle>Company Name: XYZ</mat-card-subtitle>
+        <mat-card-subtitle>Price: 60</mat-card-subtitle>
+        <div class="quantity">
+            <mat-card-subtitle>Quantity :</mat-card-subtitle>
+            <mat-slider thumbLabel [displayWith]="formatLabel" tickInterval="1" step="0.5" min="0" max="5" aria-label="units"></mat-slider>
+        </div>
+        <mat-card-actions>
+            <button mat-raised-button type="ADDCUSTOMER" color="primary">ADD CUSTOMER</button>
+        </mat-card-actions>
+    </mat-card>
+
+
+
+</div>

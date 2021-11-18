@@ -1,0 +1,12 @@
+.container {
+    background-color: seashell;
+    mat-card-actions {
+        text-align: center;
+    }
+    mat-label {
+        display: flex;
+    }
+    .form-fileds {
+        display: grid;
+    }
+}

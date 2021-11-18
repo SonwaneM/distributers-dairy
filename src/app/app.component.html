@@ -1,0 +1,71 @@
+<!-- <app-nav *ngIf="this.profileService.navbarFlag==false"></app-nav> -->
+<!-- <router-outlet></router-outlet>
+
+
+<mat-toolbar *ngIf="this.profileService.navbarFlag==true" color="primary">
+    <mat-toolbar-row>
+        <span>Distributers-Dairy</span>
+        <span class="example-fill-remaining-space"></span>
+        <span class="align-center"></span>
+        <span class="example-spacer"></span>
+        <span style="flex:auto;"></span>
+        <button mat-button><mat-icon>account_circle</mat-icon>User</button>
+        <mat-slide-toggle style="size:small;">Dark Theme</mat-slide-toggle>
+    </mat-toolbar-row>
+</mat-toolbar>
+<router-outlet></router-outlet> -->
+
+<!-- <app-nav></app-nav>
+<router-outlet></router-outlet> -->
+
+
+<mat-sidenav-container >
+
+    <mat-sidenav #sidenav >
+        <mat-nav-list class="sidenav-container">
+            <a mat-list-item routerLink="/user" (click)="sidenav.close()">
+                <mat-icon>account_circle</mat-icon>
+                <span>Profile</span>
+            </a>
+            <a mat-list-item routerLink="/home" (click)="sidenav.close()">
+                <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+                <span>Home</span>
+            </a>
+            
+            <a mat-list-item routerLink="/customer_request" (click)="sidenav.close()">
+                <mat-icon>group_add</mat-icon>
+                <span>Customer_Request</span>
+            </a>
+            <a mat-list-item routerLink="/customer" (click)="sidenav.close()">
+                <mat-icon>supervised_user_circle</mat-icon>
+                <span>Customer</span>
+            </a>
+            <a mat-list-item routerLink="/bill" (click)="sidenav.close()">
+                <mat-icon>money</mat-icon>
+                <span>Bill</span>
+            </a>
+            <a mat-list-item routerLink="/sales_today" (click)="sidenav.close()">
+                <mat-icon>calendar_today</mat-icon>
+                <span>Sales_Today</span>
+            </a>
+        
+            <a mat-list-item routerLink="/product" (click)="sidenav.close()">
+                <mat-icon>add_circle</mat-icon>
+                <span>Product</span>
+            </a>
+            <a mat-list-item routerLink="/login" (click)="sidenav.close()">
+                <mat-icon>input</mat-icon>
+                <span>Log Out</span>
+            </a>
+        </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <app-toolbar (click)="sidenav.open()"></app-toolbar>
+        <main>
+            <router-outlet></router-outlet>
+        </main>
+    </mat-sidenav-content>
+</mat-sidenav-container>
+
+

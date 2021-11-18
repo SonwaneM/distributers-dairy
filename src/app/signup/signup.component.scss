@@ -1,0 +1,27 @@
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+.example-card {
+    margin-top: 10px;
+    border: transparent;
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    //  background-color: lightblue;
+    background-image: url("/assets/istockphoto.jpeg");
+    mat-form-field {
+        color: blue !important;
+        // background-color: cadetblue;
+    }
+    .form-container {
+        display: grid;
+    }
+    .title {
+        color: blueviolet;
+    }
+}

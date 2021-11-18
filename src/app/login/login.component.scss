@@ -1,0 +1,45 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    // background-image: "./assets/istockphoto.jpeg";
+}
+
+.example-card {
+    margin-top: 10px;
+    border: none;
+    width: 40%;
+    height: 40%;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    background-image: url("/assets/istockphoto.jpeg");
+    mat-form-field {
+        color: blue !important;
+        display: block;
+    }
+    .form-container {
+        display: grid;
+        width: 100%;
+        text-align: center;
+    }
+    .title {
+        color: blueviolet;
+    }
+}
+
+@media screen and (min-width:350px) and (max-width:720px) {
+    .form-container {
+        display: grid;
+        width: 50% !important;
+        text-align: center;
+        // background-color: black;
+        mat-form-field {
+            color: blue !important;
+            display: block;
+            width: 42vw;
+        }
+    }
+}

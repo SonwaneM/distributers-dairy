@@ -1,0 +1,28 @@
+.container {
+    text-align: -webkit-center;
+    height: 100vh;
+}
+
+.customer-card {
+    height: 100vh;
+    width: 100vw;
+    border: solid 1px;
+    text-align: center;
+    p {
+        font-size: larger;
+    }
+    mat-card {
+        text-align: -webkit-center;
+        display: grid;
+        top: 25vh;
+        left: 30vw;
+        width: 40vw;
+        .button-container {
+            display: flex;
+            margin-left: 15rem;
+        }
+    }
+    .mat-card:not([class*=mat-elevation-z]) {
+        box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 1), 0 1px 1px 0 rgba(0, 0, 0, 1), 0 1px 3px 0 rgba(0, 0, 0, 1);
+    }
+}

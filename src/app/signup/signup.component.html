@@ -1,0 +1,50 @@
+<div class="container">
+    <mat-card class="example-card">
+
+        <mat-card-title class="title">SignUp</mat-card-title>
+
+
+        <form [formGroup]="SignUpForm" class="form-group form-container">
+            <div class="example-form">
+                <mat-form-field class="FullName" appearance="outline">
+                    <mat-label>FullName</mat-label>
+                    <input matInput FormControlName="fullName" required>
+                </mat-form-field>
+            </div>
+            <div class="example-form">
+                <mat-form-field class="Contact_No" appearance="outline">
+                    <mat-label>Contact_No</mat-label>
+                    <input matInput FormControlName="Contact_No" required>
+                </mat-form-field>
+            </div>
+            <div class="example-form">
+                <mat-form-field class="username" appearance="outline">
+                    <mat-label>Username</mat-label>
+                    <input matInput FormControlName="username" required>
+                </mat-form-field>
+            </div>
+            <div class="example-form">
+                <mat-form-field class="password " appearance="outline">
+                    <mat-label>Password</mat-label>
+                    <input matInput FormControlName="password" type="password" required>
+                </mat-form-field>
+            </div>
+            <div class="example-form">
+                <mat-form-field class="Address" appearance="outline">
+                    <mat-label>Address</mat-label>
+                    <input matInput FormControlName="Address" required>
+                </mat-form-field>
+            </div>
+            <div class="example-form">
+                <mat-form-field class="pincode" appearance="outline">
+                    <mat-label>Pincode</mat-label>
+                    <input matInput FormControlName="pincode" required>
+                </mat-form-field>
+            </div>
+        </form>
+        <mat-card-actions>
+            <button mat-raised-button type="SignUp" color="primary">SignUp</button>
+        </mat-card-actions>
+        <a style="color:blueviolet; margin-top: 10px; font-size: small;" routerLink="/login">Already Register? Click to Login!</a>
+    </mat-card>
+</div>
