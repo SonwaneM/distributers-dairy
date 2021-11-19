@@ -12,3 +12,17 @@
 table {
     width: 100%;
 }
+
+@media screen and (min-width:360px) and (max-width:750px) {
+    .bill-conatainer {
+        text-align: center !important;
+        height: 100vh;
+        color: rgba(0, 0, 0, .87);
+    }
+     ::ng-deep .form-container {
+        text-align: center;
+    }
+    table {
+        width: 100%;
+    }
+}

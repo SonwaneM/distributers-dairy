@@ -28,3 +28,31 @@
         width: 100%;
     }
 }
+
+@media screen and (min-width:360px) and (max-width:750px) {
+    .customer-card {
+        height: 70vh;
+        width: 80vw;
+        padding: 40px;
+        position: absolute;
+        top: 55%;
+        left: 49%;
+        border: solid 1px;
+        text-align: center;
+        background-color: antiquewhite;
+    }
+    p {
+        font-size: small;
+    }
+    th {
+        text-align: center;
+    }
+    .button_container {
+        display: flex;
+        text-align: center;
+        margin-left: 10px;
+    }
+    table {
+        width: 30vw;
+    }
+}

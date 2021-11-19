@@ -31,3 +31,17 @@
      transform: translate(-50%, -50%);
      background-color: lightcyan;
  }
+ 
+ @media screen and (min-width:360px) and (max-width:750px) {
+     .user-card {
+         margin-top: 10px;
+         border: none;
+         width: 60vw;
+         padding: 40px;
+         position: absolute;
+         top: 54%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         background-color: thistle;
+     }
+ }
