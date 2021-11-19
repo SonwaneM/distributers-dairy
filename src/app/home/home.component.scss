@@ -2,7 +2,7 @@ h1 {
     font-weight: bold;
     text-align: center;
     font-size: xx-large;
-    color: darkslateblue;
+    color: azuree;
     font-style: oblique;
 }
 
@@ -63,7 +63,7 @@ mat-card {
         font-weight: bold;
         text-align: center;
         font-size: xx-large;
-        color: darkslateblue;
+        color: azure;
         font-style: oblique;
     }
     mat-card {
@@ -81,7 +81,7 @@ mat-card {
         content: counter(count);
         animation: counter 5s linear infinite alternate;
         counter-reset: count 0;
-        background-color: brown;
+        background-color: azure;
     }
     @keyframes counter {
         0% {
