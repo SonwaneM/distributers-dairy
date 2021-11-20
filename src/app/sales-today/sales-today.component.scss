@@ -22,6 +22,7 @@
         top: 55%;
         left: 50%;
         transform: translate(-50%, -50%);
+        background: linear-gradient(90deg, #ead6ee 0%, #a0f1ea 100%);
         border: solid 1px;
         p {
             font-size: small;
@@ -32,20 +33,22 @@
     }
     
     table {
+        background: linear-gradient(90deg, #ead6ee 0%, #a0f1ea 100%);
         width: 100%;
     }
     
     @media screen and (min-width:360px) and (max-width:750px) {
         .customer-card {
             height: 70vh;
-            width: 80vw;
-            padding: 40px;
+            width: 70vw;
+            padding: 37px;
             position: absolute;
             top: 55%;
             left: 49%;
             border: solid 1px;
             text-align: center;
-            background-color: azure;
+            // background-color: azure;
+            background: linear-gradient(90deg, #ead6ee 0%, #a0f1ea 100%);
         }
         p {
             font-size: small;
@@ -54,6 +57,8 @@
             text-align: center;
         }
         table {
-            width: 20vw;
+            background: linear-gradient(90deg, #ead6ee 0%, #a0f1ea 100%);
+            width: 100%;
+            margin-left: -10px;
         }
     }

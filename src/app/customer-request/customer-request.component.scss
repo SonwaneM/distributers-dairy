@@ -3,43 +3,45 @@
     height: 100vh;
     display: flex;
     text-align: center;
-    .customer-card {
-        margin-top: 10px;
-        border: none;
-        width: 400px;
-        padding: 40px;
-        position: absolute;
-        top: 55%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        border: solid 1px;
-        p {
-            font-size: small;
-        }
-        th {
-            text-align: center;
-        }
-        .button_container {
-            display: flex;
-            margin-left: 110px;
-        }
+}
+
+.customer-card {
+    margin-top: 10px;
+    background: linear-gradient(90deg, #ead6ee 0%, #a0f1ea 100%);
+    border: none;
+    width: 400px;
+    padding: 35px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: solid 1px;
+    p {
+        font-size: small;
     }
-    table {
-        width: 100%;
+    th {
+        text-align: center;
     }
+}
+
+table {
+    background: linear-gradient(90deg, #ead6ee 0%, #a0f1ea 100%);
+    width: 100%;
+    // margin-right: 30px;
 }
 
 @media screen and (min-width:360px) and (max-width:750px) {
     .customer-card {
         height: 70vh;
-        width: 80vw;
+        background: linear-gradient(90deg, #ead6ee 0%, #a0f1ea 100%);
+        width: 70vw;
         padding: 40px;
         position: absolute;
         top: 55%;
-        left: 49%;
+        left: 50%;
         border: solid 1px;
         text-align: center;
-        background-color: azure;
+        // background-color: azure;
     }
     p {
         font-size: small;
@@ -49,10 +51,10 @@
     }
     .button_container {
         display: flex;
-        text-align: center;
-        margin-left: 10px;
+        margin-left: 40px;
     }
     table {
-        width: 30vw;
+        background: linear-gradient(90deg, #ead6ee 0%, #a0f1ea 100%);
+        width: 100%;
     }
 }

@@ -1,7 +1,8 @@
 .bill-conatainer {
     text-align: center !important;
     height: 100vh;
-    background-color: azure;
+    // background-color: azure;
+    background: linear-gradient(90deg, #ead6ee 0%, #a0f1ea 100%);
     color: rgba(0, 0, 0, .87);
 }
 
@@ -10,19 +11,24 @@
 }
 
 table {
-    width: 100%;
+    width: 50%;
+    margin-left: 25%;
+    background: linear-gradient(90deg, #ead6ee 0%, #a0f1ea 100%);
 }
 
 @media screen and (min-width:360px) and (max-width:750px) {
     .bill-conatainer {
         text-align: center !important;
         height: 100vh;
+        background: linear-gradient(90deg, #ead6ee 0%, #a0f1ea 100%);
         color: rgba(0, 0, 0, .87);
     }
      ::ng-deep .form-container {
         text-align: center;
     }
     table {
-        width: 100%;
+        width: 50%;
+        background: linear-gradient(90deg, #ead6ee 0%, #a0f1ea 100%);
+        margin-left: 10%;
     }
 }

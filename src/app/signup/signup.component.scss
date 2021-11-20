@@ -10,13 +10,14 @@
     width: 400px;
     padding: 50px;
     position: absolute;
-    top: 55%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: azure;
+    // background-color: azure;
     // background-image: url("/assets/istockphoto.jpeg");
+    background: linear-gradient(90deg, #ead6ee 0%, #a0f1ea 100%);
     mat-form-field {
-        color: blue !important;
+        color: black !important;
         display: inline;
     }
     .form-container {
@@ -38,8 +39,9 @@
         top: 60%;
         left: 50%;
         transform: translate(-50%, -50%);
-        background-color: azure;
+        // background-color: azure;
         // background-image: url("/assets/istockphoto.jpeg");
+        background: linear-gradient(90deg, #ead6ee 0%, #a0f1ea 100%);
         mat-form-field {
             color: blue !important;
             display: inline;

@@ -1,5 +1,5 @@
 .container {
-    background-color: azure;
+    // background-color: azure;
     mat-card-title {
         text-align: center;
     }
@@ -10,9 +10,32 @@
         display: grid;
     }
     .customer-card {
+        background: linear-gradient(90deg, #ead6ee 0%, #a0f1ea 100%);
         background-color: beige;
         .quantity {
             display: flex;
+        }
+    }
+}
+
+@media screen and (min-width:360px) and (max-width:750px) {
+    .container {
+        // background-color: azure;
+        mat-card-title {
+            text-align: center;
+        }
+        mat-card-actions {
+            text-align: center;
+        }
+        .form-fileds {
+            display: grid;
+        }
+        .customer-card {
+            background: linear-gradient(90deg, #ead6ee 0%, #a0f1ea 100%);
+            background-color: beige;
+            .quantity {
+                display: flex;
+            }
         }
     }
 }

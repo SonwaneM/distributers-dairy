@@ -1,10 +1,14 @@
-h1 {
-    font-weight: bold;
+.container {
     text-align: center;
-    font-size: xx-large;
-    color: darkblue;
-    font-style: oblique;
-    margin-top: 15%;
+    h1 {
+        font-weight: bold;
+        text-align: center;
+        font-size: xx-large;
+        color: darkblue;
+        font-style: oblique;
+        margin-top: 15%;
+    }
+    background: linear-gradient(90deg, #ead6ee 0%, #a0f1ea 100%);
 }
 
 div::after {
@@ -17,11 +21,6 @@ div::after {
     counter-reset: count 0;
 }
 
-// mat-card {
-//     background-color: azure;
-//     // height: 100vh;
-//     // width: 100%;
-// }
 @keyframes counter {
     0% {
         counter-increment: count 0;
@@ -59,22 +58,18 @@ div::after {
 }
 
 @media screen and (min-width:360px) and (max-width:750px) {
-    h1 {
-        font-weight: bold;
+    .container {
         text-align: center;
-        font-size: xx-large;
-        color: darkblue;
-        font-style: oblique;
-        margin-top: 25%;
+        h1 {
+            font-weight: bold;
+            text-align: center;
+            font-size: xx-large;
+            color: darkblue;
+            font-style: oblique;
+            margin-top: 25%;
+        }
+        background: linear-gradient(90deg, #ead6ee 0%, #a0f1ea 100%);
     }
-    // mat-card {
-    //     text-align: center;
-    //     height: 100vh;
-    //     width: 100vw;
-    //     // margin-right: 90%;
-    //     display: inline-flex;
-    //     background-color: azure;
-    // }
     div::after {
         font-style: calc();
         text-align: center;

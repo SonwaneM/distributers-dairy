@@ -13,8 +13,9 @@
             font-size: larger;
         }
         mat-card {
+            background: linear-gradient(90deg, #ead6ee 0%, #a0f1ea 100%);
             width: 50vw;
-            margin-left: 25vw;
+            margin-left: 22vw;
             top: 25vh;
             text-align: center;
             // text-align: -webkit-center;
@@ -42,8 +43,9 @@
             background-color: azure;
         }
         mat-card {
+            background: linear-gradient(90deg, #ead6ee 0%, #a0f1ea 100%);
             width: 80vw;
-            margin-left: 5vw;
+            margin-left: 20vw;
             top: 25vh;
             background-color: azure;
             .button-container {
@@ -53,5 +55,8 @@
             p {
                 font-size: larger;
             }
+        }
+        .mat-card:not([class*=mat-elevation-z]) {
+            box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 1), 0 1px 1px 0 rgba(0, 0, 0, 1), 0 1px 3px 0 rgba(0, 0, 0, 1);
         }
     }

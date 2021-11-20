@@ -1,46 +1,68 @@
-.container {
-    width: 100%;
-    height: 100vh;
-    // background-image: "./assets/istockphoto.jpeg";
-}
-
-.example-card {
-    margin-top: 10px;
-    border: none;
-    width: 40%;
-    height: 40%;
-    padding: 40px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    text-align: center;
-    transform: translate(-50%, -50%);
-    // background-image: url("/assets/istockphoto.jpeg");
-    background-color: azure;
-    mat-form-field {
-        color: blue !important;
-        display: block;
-    }
-    .form-container {
-        display: grid;
-        width: 100%;
-        text-align: center;
-    }
-    .title {
-        color: blueviolet;
-    }
-}
-
-@media screen and (min-width:350px) and (max-width:720px) {
-    .form-container {
-        display: grid;
-        width: 50% !important;
-        text-align: center;
-        // background-color: black;
-        mat-form-field {
-            color: blue !important;
-            display: block;
-            width: 42vw;
+        .container {
+            width: 100%;
+            height: 100vh;
+            // background-image: "./assets/istockphoto.jpeg";
         }
-    }
-}
+        
+        .example-card {
+            margin-top: 10px;
+            border: none;
+            width: 40%;
+            height: 40%;
+            padding: 40px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            text-align: center;
+            transform: translate(-50%, -50%);
+            // background-image: url("/assets/istockphoto.jpeg");
+            background: linear-gradient(90deg, #ead6ee 0%, #a0f1ea 100%);
+            // background-color: azure;
+            // background: linear-gradient(90deg, #58126a 0%, #f6b2e1 100%);
+            mat-form-field {
+                color: black !important;
+                display: block;
+            }
+            .form-container {
+                display: grid;
+                width: 100%;
+                text-align: center;
+            }
+            .title {
+                color: blueviolet;
+            }
+        }
+        
+        @media screen and (min-width:350px) and (max-width:720px) {
+            .example-card {
+                margin-top: 10px;
+                border: none;
+                width: 50vw;
+                height: 45vh;
+                padding: 40px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                text-align: center;
+                transform: translate(-50%, -50%);
+                // background-image: url("/assets/istockphoto.jpeg");
+                background: linear-gradient(90deg, #ead6ee 0%, #a0f1ea 100%);
+                // background-color: azure;
+                mat-form-field {
+                    color: black !important;
+                    display: block;
+                }
+                .form-container {
+                    display: grid;
+                    width: 45% !important;
+                    text-align: center;
+                    background: linear-gradient(90deg, #ead6ee 0%, #a0f1ea 100%);
+                    // background-color: black;
+                    mat-form-field {
+                        color: blue !important;
+                        display: block;
+                        width: 42vw;
+                    }
+                }
+            }
+        }
