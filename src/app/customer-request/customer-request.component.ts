@@ -5,16 +5,16 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 export interface PeriodicElement {
   name: string;
   position: number;
-  address: string;
+
   number: number;
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
-  {position: 1, name: 'Teju', address:'Barshi', number:9234434543 },
-  {position: 2, name: 'Anjali', address: 'Nagar', number:9676565454 },
-  {position: 3, name: 'Madhavi', address: 'Pune', number:8546563434},
-  {position: 4, name: 'Sushamita', address: 'Pune', number:9885443534},
-  {position: 5, name: 'Kanchan', address: 'Goa', number: 8956245343},
+  {position: 1, name: 'Teju',  number:9234434543 },
+  {position: 2, name: 'Anjali', number:9676565454 },
+  {position: 3, name: 'Madhavi', number:8546563434},
+  {position: 4, name: 'Sushamita', number:9885443534},
+  {position: 5, name: 'Kanchan',  number: 8956245343},
 
 ];
 
@@ -24,7 +24,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   styleUrls: ['./customer-request.component.scss']
 })
 export class CustomerRequestComponent implements OnInit {
-  displayedColumns: string[] = ['position', 'name', 'address', 'number'];
+  displayedColumns: string[] = ['position', 'name',  'number'];
   dataSource = ELEMENT_DATA;
 
   constructor(private _snackBar: MatSnackBar) {}

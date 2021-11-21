@@ -2,6 +2,8 @@
     text-align: center !important;
     height: 100vh;
     // background-color: azure;
+    margin-top: 12vh !important;
+    position: relative !important;
     background: linear-gradient(90deg, #ead6ee 0%, #a0f1ea 100%);
     color: rgba(0, 0, 0, .87);
 }
@@ -27,8 +29,8 @@ table {
         text-align: center;
     }
     table {
-        width: 50%;
+        width: 95% !important;
         background: linear-gradient(90deg, #ead6ee 0%, #a0f1ea 100%);
-        margin-left: 10%;
+        margin-left: 2%;
     }
 }

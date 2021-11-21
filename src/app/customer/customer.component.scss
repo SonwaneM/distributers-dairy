@@ -44,13 +44,13 @@
         }
         mat-card {
             background: linear-gradient(90deg, #ead6ee 0%, #a0f1ea 100%);
-            width: 80vw;
-            margin-left: 20vw;
-            top: 25vh;
-            background-color: azure;
+            width: 75vw !important;
+            margin-left: 8vw!important;
+            top: 25vh!important;
+            text-align: center!important;
             .button-container {
                 display: flex;
-                margin-left: 1rem;
+                margin-left: 18vw;
             }
             p {
                 font-size: larger;

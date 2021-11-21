@@ -2,40 +2,40 @@
     <mat-card class="customer-card">
         <mat-card-title>List of Customers</mat-card-title><br>
 
-        <form>
-            <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
 
-                <!-- Position Column -->
-                <ng-container matColumnDef="position">
-                    <th mat-header-cell *matHeaderCellDef> No. </th>
-                    <td mat-cell *matCellDef="let element"> {{element.position}} </td>
-                </ng-container>
+        <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
 
-                <!-- Name Column -->
-                <ng-container matColumnDef="name">
-                    <th mat-header-cell *matHeaderCellDef> Customer_Name </th>
-                    <td mat-cell *matCellDef="let element"> {{element.name}} </td>
-                </ng-container>
+            <!-- Position Column -->
+            <ng-container matColumnDef="position">
+                <th mat-header-cell *matHeaderCellDef> No. </th>
+                <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+            </ng-container>
 
-                <!-- Address Column -->
-                <ng-container matColumnDef="address">
-                    <th mat-header-cell *matHeaderCellDef>Address</th>
-                    <td mat-cell *matCellDef="let element"> {{element.address}} </td>
-                </ng-container>
+            <!-- Name Column -->
+            <ng-container matColumnDef="name">
+                <th mat-header-cell *matHeaderCellDef> Customer_Name </th>
+                <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+            </ng-container>
 
-                <!-- Number Column -->
-                <ng-container matColumnDef="number">
-                    <th mat-header-cell *matHeaderCellDef>Mobile-No</th>
-                    <td mat-cell *matCellDef="let element"> {{element.number}} </td>
-                </ng-container>
+            <!-- Address Column -->
+            <!-- <ng-container matColumnDef="address">
+                <th mat-header-cell *matHeaderCellDef>Address</th>
+                <td mat-cell *matCellDef="let element"> {{element.address}} </td>
+            </ng-container> -->
 
-                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-            </table>
-            <mat-card-actions>
-                <button mat-raised-button type="SET DEFAULTS FOR REST" color="primary">SET DEFAULTS FOR REST</button>
-            </mat-card-actions>
-        </form>
+            <!-- Number Column -->
+            <ng-container matColumnDef="number">
+                <th mat-header-cell *matHeaderCellDef>Mobile-No</th>
+                <td mat-cell *matCellDef="let element"> {{element.number}} </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+        <mat-card-actions>
+            <button mat-raised-button type="SET DEFAULTS FOR REST" color="primary">SET DEFAULTS FOR REST</button>
+        </mat-card-actions>
+
         <div class="button_container">
 
             <button mat-button (click)="openAccept('Request Accepted ...!')" color="accent">ACCEPT</button>

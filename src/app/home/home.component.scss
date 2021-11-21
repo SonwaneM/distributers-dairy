@@ -1,14 +1,19 @@
 .container {
     text-align: center;
+    height: 51vh;
+    background: linear-gradient( 90deg, #ead6ee 0%, #a0f1ea 100%);
+    top: 20vh;
+    position: relative;
     h1 {
         font-weight: bold;
         text-align: center;
         font-size: xx-large;
         color: darkblue;
         font-style: oblique;
-        margin-top: 15%;
+        margin-top: 5%;
+        position: absolute;
+        margin-left: 34%;
     }
-    background: linear-gradient(90deg, #ead6ee 0%, #a0f1ea 100%);
 }
 
 div::after {
@@ -19,6 +24,8 @@ div::after {
     content: counter(count);
     animation: counter 5s linear infinite alternate;
     counter-reset: count 0;
+    top: 18vh;
+    position: relative;
 }
 
 @keyframes counter {
@@ -60,15 +67,20 @@ div::after {
 @media screen and (min-width:360px) and (max-width:750px) {
     .container {
         text-align: center;
+        height: 51vh;
+        background: linear-gradient( 90deg, #ead6ee 0%, #a0f1ea 100%);
+        top: 20vh;
+        position: relative;
         h1 {
             font-weight: bold;
             text-align: center;
             font-size: xx-large;
             color: darkblue;
             font-style: oblique;
-            margin-top: 25%;
+            margin-top: 17%;
+            position: absolute;
+            margin-left: 12%;
         }
-        background: linear-gradient(90deg, #ead6ee 0%, #a0f1ea 100%);
     }
     div::after {
         font-style: calc();
@@ -78,6 +90,8 @@ div::after {
         content: counter(count);
         animation: counter 5s linear infinite alternate;
         counter-reset: count 0;
+        top: 18vh;
+        position: relative;
     }
     @keyframes counter {
         0% {

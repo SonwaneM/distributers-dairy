@@ -38,7 +38,7 @@ table {
         padding: 40px;
         position: absolute;
         top: 55%;
-        left: 50%;
+        left: 49%;
         border: solid 1px;
         text-align: center;
         // background-color: azure;
@@ -56,5 +56,7 @@ table {
     table {
         background: linear-gradient(90deg, #ead6ee 0%, #a0f1ea 100%);
         width: 100%;
+        left: 2px;
+        position: relative;
     }
 }

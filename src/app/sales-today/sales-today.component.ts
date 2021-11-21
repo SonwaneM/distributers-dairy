@@ -26,7 +26,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
 
 export class SalesTodayComponent {
 
-  displayedColumns: string[] = ['position', 'name', 'address', 'number'];
+  displayedColumns: string[] = ['position', 'name', 'number'];
   dataSource = ELEMENT_DATA;
 
   // selectedDate: any;
